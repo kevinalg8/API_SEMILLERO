@@ -4,7 +4,7 @@ let searchBtn = document.getElementById('search-btn'),
 
   searchBtn.addEventListener('click', ()=>{
     let countryName = countryInp.value,
-        finalURL =`https://restcountries.com/v2/name/${countryName}?fullText=true`;
+        finalURL =`https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     console.log(finalURL);
 
     fetch(finalURL)
