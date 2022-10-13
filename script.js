@@ -64,3 +64,13 @@ searchBtn.addEventListener("click", () => {
       }
     });
 });
+
+let key ='0a3cd1040f5642b29f9099e0b3d9b9c6', 
+    URL= `https://ipgeolocation.abstractapi.com/v1/?api_key=${key}`;
+
+    fetch(URL)
+    .then(res => res.json())
+    .then((data) => {
+      console.log(data.ip_address);
+      console.log(data);
+    })
