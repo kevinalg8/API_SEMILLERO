@@ -6,7 +6,7 @@ let searchBtn = document.getElementById("search-btn"),
 searchBtn.addEventListener("click", () => {
   let countryName = countryInp.value,
     finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
-  console.log(finalURL);
+    console.log(finalURL);
 
   fetch(finalURL)
     .then((response) => response.json())
@@ -40,7 +40,7 @@ searchBtn.addEventListener("click", () => {
       <div class="wrapper">
         <div class="data-wrapper">
           <h4>Population:</h4>
-          <span>${data[0].population[0]}</span>
+          <span>${data[0].population}</span>
         </div>
       </div>
       <div class="wrapper">
