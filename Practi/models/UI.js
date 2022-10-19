@@ -2,6 +2,15 @@
 export class UI {
     constructor(){}
 
+    showScores(score){
+        const quizEndHTML = `<h1>Result</h1>
+        <h2>Your Score: ${score}</h2>`;
+
+        const element = document.getElementById("quiz");
+        element.innerHTML = quizEndHTML;
+    }
+
+
     showQuestion(text){
         const questionTitle = document.getElementById("question");
         questionTitle.innerHTML = text;
