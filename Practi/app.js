@@ -4,11 +4,15 @@ import { Quiz } from "./models/quiz.js";
 import { UI } from "./models/UI.js";
 
 const renderPage =(quiz, ui) =>{
-  ui.showQuestion(quiz.getQuestionIndex().text)
-  ui.showChoices(quiz.getQuestionIndex().choice, (currentChoice) =>{
-    quiz.guess(currentChoice);
-    renderPage(quiz, ui);
-  })
+  if (quiz.isEnded()) {
+    alert("finalizado")
+  } else {
+    ui.showQuestion(quiz.getQuestionIndex().text)
+    ui.showChoices(quiz.getQuestionIndex().choice, (currentChoice) =>{
+      quiz.guess(currentChoice);
+      renderPage(quiz, ui);
+    })  
+  }
 };
 
 //console.log(questions);
