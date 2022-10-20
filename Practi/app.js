@@ -6,7 +6,8 @@ import { UI } from "./models/UI.js";
 const renderPage =(quiz, ui) =>{
   if (quiz.isEnded()) {
     //Posiblemente quitar la S de Scores
-    ui.showScores(quiz.score);
+    ui.showScores(quiz.score)
+    console.log(quiz.score)
   } else {
     ui.showQuestion(quiz.getQuestionIndex().text)
     ui.showChoices(quiz.getQuestionIndex().choice, (currentChoice) =>{
@@ -21,8 +22,9 @@ function main() {
   const quiz = new Quiz(questions),
     ui = new UI();
 
-    renderPage(quiz, ui);
+    renderPage(quiz,ui);
   // console.log(quiz);
 };
+
 
 main();

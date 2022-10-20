@@ -18,8 +18,10 @@ export class Quiz{
         console.log(answer);
         if (this.getQuestionIndex().correctAnswer(answer)){
             this.score++;
+            this.guardar('opt' + this.questionIndex, true)
+        }else{
+            this.guardar('opt' + this.questionIndex, false)
         }
-        
         this.questionIndex++;
-    }
+    };
 }
