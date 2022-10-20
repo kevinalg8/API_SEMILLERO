@@ -15,10 +15,11 @@ export class Quiz{
         return this.questions.length === this.questionIndex;
     }
     guess(answer){
-        console.log(answer)
+        console.log(answer);
         if (this.getQuestionIndex().correctAnswer(answer)){
             this.score++;
         }
+        
         this.questionIndex++;
     }
 }

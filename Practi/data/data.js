@@ -3,12 +3,12 @@ export const data =[
     {
         question:"¿Cual de las siguientes opciones no es un editor de codigo?",
         choice:["Vim", "Vscode", "Atom", "Word"],
-        answer: "word",
+        answer: "Word",
     },
     {
         question: "¿que lenguaje no es orientado a objetos?",
         choice: ["Java", "Haskell", "C++", "Python"],
-        answer: "haskell",
+        answer: "Haskell",
     },
     {
         question: "¿que lenguaje no sirve para estilizar sitios web?",
