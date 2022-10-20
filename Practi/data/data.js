@@ -6,12 +6,12 @@ export const data =[
         answer: "Word",
     },
     {
-        question: "¿que lenguaje no es orientado a objetos?",
+        question: "¿Que lenguaje no es orientado a objetos?",
         choice: ["Java", "Haskell", "C++", "Python"],
         answer: "Haskell",
     },
     {
-        question: "¿que lenguaje no sirve para estilizar sitios web?",
+        question: "¿Que lenguaje no sirve para estilizar sitios web?",
         choice: ["Stylus", "Less", "Sass", "PortCSS", "NextCSS"],
         answer: "NextCSS",
     },
